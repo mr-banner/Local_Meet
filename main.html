@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Conferencing Website</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+ <main>
+
+    <div class="title">
+        <img src="img/logo1 copy.png" alt="logo" id="logo">
+        <h1 class="name"><span>Local</span> Meet</h1>
+    </div>
+    <div id="join-wrapper">
+        <input id="username" type="text" placeholder="Enter your name" />
+        <button id="join-btn">Join Stream</button>
+    </div>
+    <div id="user-streams" >
+
+
+    </div>
+    <div id="footer">
+        <div class="icon-wrapper">
+            <img  id="camera-btn" src="./img/video_on.jpg" />
+            <p>Cam</p>
+        </div>
+
+        <div class="icon-wrapper">
+            <img id="mic-btn" src="./img/mic_on.png" />
+            <p>Mic</p>
+        </div>
+
+        <div class="icon-wrapper">
+            <img  id="leave-btn" src="./img/end_call.jpg" onclick="window.location.href='feedback.html'"/>
+            <p>Leave</p>
+        </div>     
+    </div>
+
+</main>
+    <script src="AgoraRTC_N-4.17.2.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

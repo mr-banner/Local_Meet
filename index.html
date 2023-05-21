@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Video Conferencing Website</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+
+<body>
+
+    <nav class="nav-bar">
+        <img src="img/logo1 copy.png" alt="logo" id="logo">
+        <h1 class="name"><span>Local</span> Meet</h1>
+    </nav>
+
+    <main>
+        <div class="left">
+            <h1>Online video meeting platform.
+                Free and easy to use.
+            </h1>
+            <p>It can be used for business meetings,casual video callings between friends and also for education
+                purpose.</p>
+            <a href="main.html"><button id="btn">Start meeting</button></a>
+        </div>
+        <div class="right">
+            <div class="mySlides fade">
+                <img src="img/main-1.jpg" alt="Image">
+                <h3>Get a link to share</h3>
+                <p>Click start meeting to get the meeting code and <br>
+                    share it with your friends to join. </p>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="img/main-2.png" alt="Image">
+                <h3>Very easy to use</h3>
+                <p>Just share your meeting code to your friends, <br>
+                    clients to join the meeting without any issue. </p>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="img/main-3.png" alt="Image">
+                <h3>Safe and secure</h3>
+                <p>It is secure and only those can join the meeting <br>
+                    who have the meeting code.
+                </p>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+        <br>
+    </main>
+
+    <footer>
+        <span class="site">Local <span id="site">Meet</span></span>
+        <span>| 2023 | Designed By</span>
+        <span class="editor">KB</span>
+    </footer>
+
+</body>
+<script src='script.js'></script>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback page</title>
+    <link rel="stylesheet" href="feedback.css"> 
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="outerbox">
+        <div class="innerbox" id="inner">
+            
+            <header class="signup-header">
+                <h1>FEEDBACK</h1>
+                <p>It just takes 15 seconds.</p>
+            </header>
+            <main class="signup-body">
+                    <p>
+                        <label for="full name">Full name</label>
+                        <input type="text" id="fullname" placeholder="Enter your Name">
+                    </p>
+                    <p>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter your Email" >
+                    </p>
+                    <p>
+                        <label for="text">Share Your Experience</label>
+                        <textarea name="Experience" id="text-area"></textarea>
+                    </p>
+                    <p>
+                        <input type="submit" id="submit" onclick="openPopup()">
+                    </p>
+            </main>
+        </div>
+
+        <div class="popup" id="popup">
+            <h2>Thank You!</h2>
+            <p>Please Visit Again.</p>
+            <button type="button" id="home" onclick="window.location.href='index.html'">Go To Home</button>
+        </div>
+    </div>
+    <script>
+        let popup=document.getElementById("popup");
+        function openPopup(){
+            popup.classList.add("open-popup")
+            document.getElementById("inner").style.display = 'none';
+
+        }
+    </script>
+</body>
+</html>
