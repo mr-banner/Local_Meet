@@ -2,9 +2,9 @@ let client = AgoraRTC.createClient({mode:'rtc', codec:"vp8"})
 
 let config = {
     appid:'f0904f4220b74747a9e3e585579bb5bf',
-    token:'007eJxTYLh3eMrm8tOf4m5a6wZ94f70j/v+bLnLiRmLkpw3nTqy+y6TAkOagaWBSZqJkZFBkrkJECZaphqnmlqYmppbJiWZJqW5W2WlNAQyMlyrEGZmZIBAEJ+TwSc/OTHHNzW1hIEBALz5IuY=',
+    token:'007eJxTYJB8psmQc3ryr7n2/tle7iu4sl9GV/gpeXl9fFhyuWDRRFYFhjQDSwOTNBMjI4MkcxMgTLRMNU41tTA1NbdMSjJNSnvSl53SEMjIsLnkBSMjAwSC+CwMuampJQwMAPnzHwk=',
     uid:null,
-    channel:'LocalMeet',
+    channel:'meet',
 }
 
 let localTracks = {
